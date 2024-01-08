@@ -8,7 +8,7 @@ import {
   Flex,
   HelpIcon,
   BalanceInput,
-  BalanceInputLottery,
+  // BalanceInputLottery,
   Ticket,
   useTooltip,
   Skeleton,
@@ -326,7 +326,7 @@ const BuyTicketsModal: React.FC<BuyTicketsModalProps> = ({ onDismiss }) => {
           </Text>
         </Flex>
       </Flex>
-      <BalanceInputLottery
+      <BalanceInput
         isWarning={account && (userNotEnoughCake || maxTicketPurchaseExceeded)}
         placeholder="0"
         value={ticketsToBuy}
