@@ -12,7 +12,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'MLOKY',
     lpAddresses: {
       97: '',
-      56: '0xF71E950758310faF9f7D51C4F4250C7546086C1f',
+      56: '',
     },
     token: serializedTokens.mloky,
     quoteToken: serializedTokens.wbnb,

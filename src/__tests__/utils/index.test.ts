@@ -41,12 +41,12 @@ describe('utils', () => {
     })
 
     it('returns the checksummed address', () => {
-      expect(isAddress('0xf164fc0ec4e93095b804a4795bbe1e041497b92a')).toBe('0xf164fC0Ec4E93095b804a4795bBe1e041497b92a')
-      expect(isAddress('0xf164fC0Ec4E93095b804a4795bBe1e041497b92a')).toBe('0xf164fC0Ec4E93095b804a4795bBe1e041497b92a')
+      expect(isAddress('0x8aE80cDDF5be4b180722407DcDC39b21b834c24d')).toBe('0x8aE80cDDF5be4b180722407DcDC39b21b834c24d')
+      expect(isAddress('0x8aE80cDDF5be4b180722407DcDC39b21b834c24d')).toBe('0x8aE80cDDF5be4b180722407DcDC39b21b834c24d')
     })
 
     it('succeeds even without prefix', () => {
-      expect(isAddress('f164fc0ec4e93095b804a4795bbe1e041497b92a')).toBe('0xf164fC0Ec4E93095b804a4795bBe1e041497b92a')
+      expect(isAddress('f164fc0ec4e93095b804a4795bbe1e041497b92a')).toBe('0x8aE80cDDF5be4b180722407DcDC39b21b834c24d')
     })
     it('fails if too long', () => {
       expect(isAddress('f164fc0ec4e93095b804a4795bbe1e041497b92a0')).toBe(false)
